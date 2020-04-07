@@ -1,0 +1,32 @@
+ /*
+ ============================================================================
+ Name        : G_Ejercicios_07
+ Description : Diseñar un programa que calcule la longitud de la
+ circunferencia y el área del círculo de radio dado.
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+	setbuf(stdin, NULL);
+
+	int radio;
+	int pi = 3.14;
+	int perimetro;
+	int area;
+
+	printf("Ingrese el radio\n");
+	fflush(stdin);
+	scanf("%d", &radio);
+
+	perimetro = 2 * pi * radio;
+	area = pi * (radio * radio);
+
+	printf("\nEl perimetro es %d", perimetro);
+	printf("\nEl area es %d", area);
+
+	return 0;
+}

@@ -1,0 +1,62 @@
+/*
+ ============================================================================
+ Name        : Clase2-Ejemplo_B
+ Description :
+ ============================================================================
+ */
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+/*
+int main() {
+	int num;
+	int contadorPositivos = 0;
+	int respuesta=1;
+
+	do {
+		printf("ingrese un numero");
+		scanf("%d", &num);
+
+		if(num>0)
+		{
+			contadorPositivos++;
+		}
+
+		printf("Si desea dejar de ingresar numeros presione 0");
+		scanf("%d", &respuesta);
+
+
+
+	} while(respuesta==1);
+
+	printf("La cantidad de numeros positivos son: %d", contadorPositivos);
+
+}
+
+*/
+
+int main() {
+	setbuf(stdout, NULL);
+
+	int numero;
+	int acumuladorPositivos = 0;
+	char respuesta = 's';
+
+	do {
+		printf("Ingrese un numero\n");
+		scanf("%d", &numero);
+
+		if (numero > 0) {
+			acumuladorPositivos = numero + acumuladorPositivos;
+		}
+
+		printf("Desea ingresar otro número?\n");
+		fflush(stdin);	//Es necesario para limpiar buffer del teclado, asi no levanta basura
+		scanf("%c", &respuesta);
+
+	} while (respuesta == 's');
+
+	printf("La suma de numeros positivos es : %d", acumuladorPositivos);
+}

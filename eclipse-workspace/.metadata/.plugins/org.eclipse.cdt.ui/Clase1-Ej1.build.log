@@ -1,0 +1,6 @@
+21:45:38 **** Incremental Build of configuration Release for project Clase1-Ej1 ****
+Info: Internal Builder is used for build
+gcc -o Clase1-Ej1.exe "src\\Clase1-Ej1.o" 
+
+21:45:38 Build Finished. 0 errors, 0 warnings. (took 201ms)
+

@@ -1,0 +1,43 @@
+/*
+ * utn.c
+ *
+ *  Created on: 2 abr. 2020
+ *      Author: milat
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int utn_getNumero(int *pResultado, char *mensaje, char *mensajeError, int minimo, int maximo, int reintentos)
+{
+	int ret;
+	int num;
+
+	//setbuf(stdin, NULL);
+
+	while (reintentos >= 0) {
+		printf("%s", mensaje);
+		fflush(stdin);
+		//scanf("%d", &num);
+		if (scanf("%d", &num) == 1) //si scanf=1(pudo escribir la variable)
+		{
+			if (num <= maximo && num >= minimo)
+			{
+				break;
+			}
+		}
+		reintentos--;
+		printf("%s", mensajeError);
+		fflush(stdin);
+	}
+
+	if (reintentos == 0) {
+		ret = -1;
+	} else {
+		ret = 0;
+		*pResultado = num;
+	}
+
+	return ret;
+}
+

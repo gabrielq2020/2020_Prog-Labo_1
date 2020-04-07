@@ -1,0 +1,36 @@
+/*
+ ============================================================================
+ Name        : Clase3-Ejemplo_B.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+	setbuf(stdout, NULL);
+
+	int radio;
+	int resultado;
+
+	resultado = calculoArea();
+
+	printf("El area del circulo es", area);
+
+
+
+	return 0;
+}
+
+int calculoArea(){
+	int area;
+	printf("Ingrese el radio");
+	scanf("%d", &radio);
+	area = radio * 3.14;
+	return area;
+
+}

@@ -1,0 +1,46 @@
+/*
+ ============================================================================
+ Name        : Clase1-Ej4a.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+
+ - Solicite al usuario 10 números
+ - Calcule cuántos son negativos y cuantos son positivos
+ - Muestre por pantalla la cantidad de negativos y la cantidad de positivos
+
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+	int numero;
+	int contador;
+	int contaPos = 0;
+	int contaNeg = 0;
+
+	setbuf(stdout, NULL);
+
+	//Solicite al usuario 10 números
+	for (contador = 0; contador < 10; contador++) {
+
+		printf("Ingrese un numero \n");
+		fflush(stdin);	//Limpia cualquier basura del teclado
+		scanf("%d", &numero);
+
+		if (numero >= 0) {
+			contaPos++;
+		} else {
+			contaNeg++;
+		}
+
+	}
+
+	printf("\nNumeros positivos:\n %d", contaPos);
+	printf("\nNumeros negativos:\n %d", contaNeg);
+
+	return 0;
+}

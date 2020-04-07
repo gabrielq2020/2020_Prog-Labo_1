@@ -1,0 +1,21 @@
+ /*
+ ============================================================================
+ Name        : Clase4_Ejemplo_A.c
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "utn.h"
+
+int main()
+{
+	setbuf(stdin, NULL);
+	int n;
+	utn_getNumero(&n, "ingrese el numero:", "error", 1, 9, 3);
+	printf("num ingresado:%d", n);
+
+	return 0;
+}
+

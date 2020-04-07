@@ -1,0 +1,23 @@
+ /*
+ ============================================================================
+ Name        : Clase4-Ejercicio_01
+ Description : Desarrollar una biblioteca "utn.h" que posea funciones para
+ pedirle al usuario el ingreso de datos
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+	setbuf(stdout, NULL);
+
+	int numero;
+	float flotante;
+	char caracter;
+
+	printf
+
+	return 0;
+}

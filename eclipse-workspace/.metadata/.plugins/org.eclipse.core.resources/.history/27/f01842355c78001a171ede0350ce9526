@@ -1,0 +1,39 @@
+ /*
+ ============================================================================
+ Name        : Clase4-Ejercicio_01
+ Description : Desarrollar una biblioteca "utn.h" que posea funciones para
+ pedirle al usuario el ingreso de datos
+ -getInt()
+ -getFloat()
+ -getChar()
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+	setbuf(stdout, NULL);
+
+	int numero;
+	float flotante;
+	char caracter;
+
+	char mensajeN = "Ingrese un numero entero";
+	char mensajeF = "Ingrese un numero flotante";
+	char mensajeC = "Ingrese un caracter";
+
+	numero = getInt()
+
+	return 0;
+}
+
+int getInt(char mensaje, int numeroInt)
+{
+	printf(mensaje);
+	fflush(stdin);
+	scanf("%d", numeroInt);
+
+	return numeroInt;
+}

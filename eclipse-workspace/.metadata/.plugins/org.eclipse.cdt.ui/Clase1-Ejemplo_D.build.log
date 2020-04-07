@@ -1,0 +1,7 @@
+21:17:34 **** Rebuild of configuration Debug for project Clase1-Ejemplo_D ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase1-Ejemplo_D.o" "..\\src\\Clase1-Ejemplo_D.c" 
+gcc -o Clase1-Ejemplo_D.exe "src\\Clase1-Ejemplo_D.o" 
+
+21:17:34 Build Finished. 0 errors, 0 warnings. (took 428ms)
+

@@ -1,0 +1,33 @@
+/*
+ ============================================================================
+ Name        : Clase3-Ejemplo_A.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int funcion();
+
+int main(void) {
+	setbuf(stdout, NULL);
+
+	funcion();
+
+	return 0;
+}
+
+int funcion(){
+	int numeroIngresado;
+	int numeroPantalla;
+	printf("Ingrese un numero");
+	fflush(stdin);
+	scanf("%d", &numeroIngresado);
+	numeroPantalla = numeroIngresado;
+	printf("El numero que ingreso es: %d", numeroPantalla);
+	return numeroPantalla;
+}
