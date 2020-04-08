@@ -1,0 +1,29 @@
+ /*
+ ============================================================================
+ Name        : G_Ejercicios_14
+ Description : Diseñar un programa que imprima y sume la serie de números
+ 	 	 	   3,6,9,12,...,99.
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+	setbuf(stdout, NULL);
+
+	int numero = 3;
+	int acumulador = 3;
+
+	while(numero < 100)
+	{
+		printf("%d\n", numero);
+		numero = numero + 3;
+		acumulador+=numero;
+	}
+
+	printf("\nLa suma de la serie de numeros es %d", acumulador);
+
+	return 0;
+}

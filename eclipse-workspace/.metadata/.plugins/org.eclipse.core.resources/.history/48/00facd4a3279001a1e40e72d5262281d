@@ -1,0 +1,19 @@
+ /*
+ ============================================================================
+ Name        : G_Ejercicios_17
+ Description : Hacer el programa que nos permita introducir un número por
+ 	 	 	   teclado y nos informe si es par o impar.
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+	setbuf(stdout, NULL);
+
+
+
+	return 0;
+}

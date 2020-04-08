@@ -1,0 +1,32 @@
+ /*
+ ============================================================================
+ Name        : G_Ejercicios_16
+ Description : Hacer el programaque nos permita introducir un número por
+ 	 	 	   teclado y nos informe si es positivo o negativo.
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+	setbuf(stdout, NULL);
+
+	int numero;
+
+	printf("Ingrese un numero %d", numero);
+	fflush(stdin);
+	scanf("%d", &numero);
+
+	if(numero >= 0)
+	{
+		printf("El numero es positivo %d", numero);
+	}
+	else
+	{
+		printf("El numero es negativo %d", numero)
+	}
+
+	return 0;
+}

@@ -1,0 +1,30 @@
+ /*
+ ============================================================================
+ Name        : G_Ejercicios_10
+ Description : Escribir en C un programa que  muestre los números impares
+ entre 0 y 100 y que imprima cuantos impares hay.
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+	setbuf(stdout, NULL);
+
+	int i;
+	int contadorImpares = 0;
+
+	for(i = 0; i < 100; i++)
+	{
+		if(i % 2 != 0)
+		{
+			printf("Los numeros impares entre 0 y 100 son: \n%d\n", i);
+			contadorImpares++;
+		}
+
+	}
+
+	return 0;
+}
