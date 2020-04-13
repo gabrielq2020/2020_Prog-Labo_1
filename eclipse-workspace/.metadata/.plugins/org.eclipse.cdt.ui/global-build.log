@@ -1,15 +1,66 @@
-21:46:14 **** Incremental Build of configuration Debug for project G_Ejercicios_17 ****
+19:23:10 **** Incremental Build of configuration Debug for project Prog1_TP1 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\G_Ejercicios_17.o" "..\\src\\G_Ejercicios_17.c" 
-gcc -o G_Ejercicios_17.exe "src\\G_Ejercicios_17.o" 
-Info: Nothing to build for G_Ejercicios_17
-21:46:46 **** Incremental Build of configuration Debug for project G_Ejercicios_17 ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utn.o" "..\\src\\utn.c" 
+gcc -o Prog1_TP1.exe "src\\Prog1_TP1.o" "src\\utn.o" 
+Info: Nothing to build for Prog1_TP1
+19:24:45 **** Incremental Build of configuration Debug for project Prog1_TP1 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\G_Ejercicios_17.o" "..\\src\\G_Ejercicios_17.c" 
-gcc -o G_Ejercicios_17.exe "src\\G_Ejercicios_17.o" 
-Info: Nothing to build for G_Ejercicios_17
-21:51:38 **** Incremental Build of configuration Debug for project G_Ejercicios_17 ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Prog1_TP1.o" "..\\src\\Prog1_TP1.c" 
+..\src\Prog1_TP1.c:33:6: warning: return type of 'main' is not 'int' [-Wmain]
+   33 | void main()
+      |      ^~~~
+..\src\Prog1_TP1.c: In function 'main':
+..\src\Prog1_TP1.c:81:9: warning: 'return' with a value, in function returning void [-Wreturn-type]
+   81 |  return 0;
+      |         ^
+..\src\Prog1_TP1.c:33:6: note: declared here
+   33 | void main()
+      |      ^~~~
+gcc -o Prog1_TP1.exe "src\\Prog1_TP1.o" "src\\utn.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Prog1_TP1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:25:34 **** Incremental Build of configuration Debug for project Prog1_TP1 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\G_Ejercicios_17.o" "..\\src\\G_Ejercicios_17.c" 
-gcc -o G_Ejercicios_17.exe "src\\G_Ejercicios_17.o" 
-Info: Nothing to build for G_Ejercicios_17
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Prog1_TP1.o" "..\\src\\Prog1_TP1.c" 
+..\src\Prog1_TP1.c:33:6: warning: return type of 'main' is not 'int' [-Wmain]
+   33 | void main()
+      |      ^~~~
+..\src\Prog1_TP1.c: In function 'main':
+..\src\Prog1_TP1.c:81:9: error: 'EXIT_SUCCES' undeclared (first use in this function); did you mean 'EXIT_SUCCESS'?
+   81 |  return EXIT_SUCCES!;
+      |         ^~~~~~~~~~~
+      |         EXIT_SUCCESS
+..\src\Prog1_TP1.c:81:9: note: each undeclared identifier is reported only once for each function it appears in
+..\src\Prog1_TP1.c:81:9: warning: 'return' with a value, in function returning void [-Wreturn-type]
+..\src\Prog1_TP1.c:33:6: note: declared here
+   33 | void main()
+      |      ^~~~
+..\src\Prog1_TP1.c:81:20: error: expected ';' before '!' token
+   81 |  return EXIT_SUCCES!;
+      |                    ^
+      |                    ;
+19:26:22 **** Incremental Build of configuration Debug for project Prog1_TP1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Prog1_TP1.o" "..\\src\\Prog1_TP1.c" 
+gcc -o Prog1_TP1.exe "src\\Prog1_TP1.o" "src\\utn.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Prog1_TP1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:26:42 **** Incremental Build of configuration Debug for project Prog1_TP1 ****
+Info: Internal Builder is used for build
+gcc -o Prog1_TP1.exe "src\\Prog1_TP1.o" "src\\utn.o" 
+Info: Nothing to build for Prog1_TP1
+19:27:03 **** Incremental Build of configuration Debug for project Prog1_TP1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Prog1_TP1.o" "..\\src\\Prog1_TP1.c" 
+gcc -o Prog1_TP1.exe "src\\Prog1_TP1.o" "src\\utn.o" 
+Info: Nothing to build for Prog1_TP1
+21:44:41 **** Incremental Build of configuration Debug for project Prog1_TP1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Prog1_TP1.o" "..\\src\\Prog1_TP1.c" 
+gcc -o Prog1_TP1.exe "src\\Prog1_TP1.o" "src\\utn.o" 
+Info: Nothing to build for Prog1_TP1
+21:45:35 **** Incremental Build of configuration Debug for project Prog1_TP1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Prog1_TP1.o" "..\\src\\Prog1_TP1.c" 
+gcc -o Prog1_TP1.exe "src\\Prog1_TP1.o" "src\\utn.o" 
+Info: Nothing to build for Prog1_TP1

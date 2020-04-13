@@ -1,0 +1,17 @@
+ /*
+ ============================================================================
+ Name        : Clase6-Ejemplo_C
+ Description :
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "utn.h"
+
+int main(void) {
+
+	setbuf(stdout, NULL);
+
+	return 0;
+}

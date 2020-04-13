@@ -19,24 +19,57 @@ int main(void) {
 
 	setbuf(stdout, NULL);
 
-	int min;
-	int max;
-	int numeroRandom;
+	int desde;
+	int hasta;
+	char numeroRandom;
 	int numeroIngresado;
-	int i = 0;
-	char respuesta = 's';
+	char continuar;
+	int jugar;
 
+	desde = 1;
+	hasta = 100;
+	jugar = 1;
 
+	continuar = 's';
+	while(continuar == 's')
+	{
+		numeroRandom = getNumeroRandom(desde, hasta, jugar);
 
+		while(jugar == 1)
+		{
+			numeroIngresado = getInt("Ingrese un numero(0-99)\n");
+
+			if(numeroIngresado < 0 || numeroIngresado > 99)
+			{
+				printf("Ingreso un numero fuera de rango.");
+				jugar = 0;
+			}
+			else if(numeroIngresado == numeroRandom)
+			{
+				printf("\nFelicitaciones, usted adivino el numero\n");
+				jugar = 0;
+			}
+			else if(numeroIngresado > numeroRandom)
+			{
+				printf("Ingrese un numero mas chico.\n");
+			}
+			else if(numeroIngresado < numeroRandom)
+			{
+				printf("Ingrese un numero mas grande.\n");
+			}
+		}
+		continuar = getChar("Desea jugar de nuevo? s/n\n");
+	}
 	return 0;
 }
 
-char getNumeroAleatorio(int desde, int hasta, int iniciar)
+/*
+char getNumeroRandom(int desde, int hasta, int iniciar)
 {
 	if(iniciar)
 	{
 		srand(time(NULL));
 	}
-
 	return desde + (rand() % (hasta + 1 - desde));
 }
+*/

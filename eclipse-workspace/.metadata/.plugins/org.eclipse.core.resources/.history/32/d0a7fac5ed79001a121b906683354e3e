@@ -1,0 +1,21 @@
+ /*
+ ============================================================================
+ Name        : Clase5-Ejemplo_A
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//int utn_getNumero(int* pResultado, char* mensaje, char* mensajeError, int minimo, int maximo, int reintentos) {
+
+int main(void)
+{
+
+	setbuf(stdout, NULL);
+
+
+
+	return 0;
+}

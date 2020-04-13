@@ -1,0 +1,36 @@
+ /*
+ ============================================================================
+ Name        : Clase6-Ejemplo_B
+ Description :
+ Hacer un programa que le pida 10 numeros al usuario y los guarde en un array
+ 1) analizar el array e imprimir:
+ -Promedio
+ -Maximo
+ -Minimo
+ 2) Pedirle al usuario que ingrese un numero e indicar si el mismo está o no
+ en el array.
+ 3) Imprimir el array ordenado de mayor a menor
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+
+	setbuf(stdout, NULL);
+
+	int arrayInt[10];
+	float promedio;
+	int maximo;
+	int minimo;
+	int i;
+
+	for(i=0; i<10; i++)
+	{
+
+	}
+
+
+	return 0;
+}

@@ -29,6 +29,10 @@ int main(void)
 	flotante = getFloat("\nIngrese un numero flotante\n");
 	caracter = getChar("\nIngrese un caracter\n");
 
+	printf("\nEl numero entero ingresado es \n%d\n", numero);
+	printf("\nEl numero flotante ingresado es \n%.2f\n", flotante);
+	printf("\nEl caracter ingresado es \n%c", caracter);
+
 	return 0;
 }
 
@@ -36,7 +40,6 @@ int getInt(char mensaje[])
 {
 	int auxiliar;
 	printf("%s",mensaje);
-	fflush(stdin);
 	scanf("%d", &auxiliar);
 
 	return auxiliar;
@@ -46,7 +49,6 @@ float getFloat(char mensaje[])
 {
 	float auxiliar;
 	printf("%s",mensaje);
-	fflush(stdin);
 	scanf("%f", &auxiliar);
 
 	return auxiliar;

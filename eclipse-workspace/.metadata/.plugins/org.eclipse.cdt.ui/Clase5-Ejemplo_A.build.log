@@ -1,0 +1,8 @@
+21:37:31 **** Rebuild of configuration Debug for project Clase5-Ejemplo_A ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utn.o" "..\\src\\utn.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase5-Ejemplo_A.o" "..\\src\\Clase5-Ejemplo_A.c" 
+gcc -o Clase5-Ejemplo_A.exe "src\\Clase5-Ejemplo_A.o" "src\\utn.o" 
+
+21:37:34 Build Finished. 0 errors, 0 warnings. (took 3s.325ms)
+

@@ -1,0 +1,71 @@
+ /*
+ ============================================================================
+ Name        : Clase4-Ejercicio_02
+ Description :
+ Diseñar un programa para jugar a adivinar un número entre 0 y
+ 100. El juego tiene que dar pistas de si el número introducido por el
+ jugador está por encima o por debajo. El juego termina cuando se adivina el
+ número o se decide terminar de jugar ingresando un número negativo. Permitir
+ jugar tantas veces como lo desee el jugador y al salir mostrar su mejor
+ puntuación. Utilizar la biblioteca del ejercicio #001.
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main(void) {
+
+	setbuf(stdout, NULL);
+
+	int desde;
+	int hasta;
+	int numeroRandom;
+	int numeroIngresado;
+	char mensaje;
+	char continuar;
+	int jugar;
+
+	desde = 0;
+	hasta = 100;
+
+	continuar = 's';
+	while(continuar == 's')
+	{
+		numeroRandom = getNumeroRandom(desde, hasta, 1);
+
+		jugar = 1;
+		while(jugar == 1)
+		{
+			numeroIngresado = getInt("\nIngrese un numero(0-99)\n");
+
+			if(numeroIngresado == numeroRandom)
+			{
+				printf("\nFelicitaciones, usted adivino el numero\n");
+				break;
+			}
+			else if(numeroIngresado > numeroRandom)
+			{
+				printf("Ingrese un numero mas chico.\n");
+			}
+			else if(numeroIngresado < numeroRandom)
+			{
+				printf("Ingrese un numero mas grande.\n");
+			}
+		}
+	}
+
+	return 0;
+}
+
+/*
+char getNumeroRandom(int desde, int hasta, int iniciar)
+{
+	if(iniciar)
+	{
+		srand(time(NULL));
+	}
+	return desde + (rand() % (hasta + 1 - desde));
+}
+*/

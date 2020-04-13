@@ -1,0 +1,36 @@
+ /*
+ ============================================================================
+ Name        : Clase5-Ejemplo_A
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+//int utn_getNumero(int* pResultado, char* mensaje, char* mensajeError, int minimo, int maximo, int reintentos) {
+
+
+int main(void)
+{
+	int arrayInt[3];
+	int i;
+	int numero;
+	int respuesta;
+
+	for(i = 0; i < 3; i++)
+	{
+		respuesta = utn_getNumero(&numero, "Numero?\n","Error tiene que ser de 1 a 50\n",1,50,2);
+		if(respuesta == 0)
+		{
+			arrayInt[i] = numero;
+		}
+	}
+
+	for(i = 0; i < 3; i++)
+	{
+		printf("El indice [%d] tiene como valor %d\n", i, arrayInt[i]);
+	}
+
+	return EXIT_SUCCESS;
+}

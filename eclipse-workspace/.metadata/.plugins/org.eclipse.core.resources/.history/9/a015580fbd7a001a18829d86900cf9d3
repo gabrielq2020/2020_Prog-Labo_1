@@ -1,0 +1,104 @@
+ /*
+ ============================================================================
+ Name        : Clase6-Ejemplo_B
+ Description :
+ Hacer un programa que le pida 10 numeros al usuario y los guarde en un array
+ 1) analizar el array e imprimir:
+ -Promedio
+ -Maximo
+ -Minimo
+ 2) Pedirle al usuario que ingrese un numero e indicar si el mismo está o no
+ en el array.
+ 3) Imprimir el array ordenado de mayor a menor
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "utn.h"
+
+int getInt(char mensaje[]);
+
+int main(void)
+{
+
+	setbuf(stdout, NULL);
+
+	int arrayInt[10];
+	int numeroIngresado;
+	float promedio;
+	int maximo;
+	int minimo;
+	int i;
+	int acumulador = 0;
+	int respuestaSwitch;
+	int opcion;
+
+	for(i=0; i<10; i++)
+	{
+		numeroIngresado = getInt("Ingrese un numero\n");
+		arrayInt[i] = numeroIngresado;
+		acumulador += numeroIngresado;
+
+		if(i=0)
+		{
+			minimo = numeroIngresado;
+			maximo = numeroIngresado;
+		}
+
+		if(numeroIngresado < minimo)
+		{
+			minimo = numeroIngresado;
+		}
+		else if (numeroIngresado > maximo)
+		{
+			maximo = numeroIngresado;
+		}
+	}
+
+	promedio = acumulador / 10;
+
+	do
+		{
+			respuestaSwitch = utn_getNumero(&opcion, "1-Modificar Edad\n2-Modificar Salario\n3-Mostrar\n4-Ordenar\n6-Salir\n","Error tiene que ser de 1 a 6\n",1,6,2);
+			if(respuestaSwitch == 0)
+			{
+				switch(opcion)
+				{
+					case 1:
+						respuesta = utn_getNumero(&i, "Indice de la Edad?\n","Error indice fuera de rango\n",0,QTY_EMPLEADOS,2);
+						respuestaE = utn_getNumero(&bufferEdad, "Edad?\n","Error tiene que ser de 18 a 65\n",18,65,2);
+						if(respuestaE == 0 && respuesta == 0)
+						{
+							arrayEdades[i] = bufferEdad;
+						}
+						break;
+					case 2:
+						respuesta = utn_getNumero(&i, "Indice del salario?\n","Error indice fuera de rango\n",0,QTY_EMPLEADOS,2);
+						respuestaS = utn_getNumero(&bufferSalario, "Salario?\n","Error tiene que ser de 1000 a 100000\n",1000,100000,2);
+						if(respuestaS == 0 && respuesta == 0)
+						{
+							arraySalarios[i] = bufferSalario;
+						}
+						break;
+					case 3:
+						imprimirArrayInt(arrayEdades,QTY_EMPLEADOS);
+						imprimirArrayInt(arraySalarios,QTY_EMPLEADOS);
+						break;
+					case 4:
+						if(ordenar(arrayEdades,QTY_EMPLEADOS) == 0)
+						{
+							printf("\nSi ordeno");
+						}
+						break;
+
+				}
+			}
+		}while(opcion != 6);
+
+
+
+
+
+	return 0;
+}
